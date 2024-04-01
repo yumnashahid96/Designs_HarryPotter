@@ -1,0 +1,396 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fswiss\fcharset0 Arial-BoldItalicMT;
+\f3\froman\fcharset0 Times-Roman;\f4\fmodern\fcharset0 CourierNewPSMT;\f5\fmodern\fcharset0 CourierNewPS-BoldMT;
+\f6\fswiss\fcharset0 Arial-BoldMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww37900\viewh17980\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # ----- Level mp_7367 ------------------------\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
+# Designer: 
+\f2\i\b Yumna Shahid
+\f3\i0\b0\fs24 \
+
+\f1\fs29\fsmilli14667 # Properties: Mirrors, Firebolts and Mining - Additional functionalities Colovaria and refill Spells
+\f3\fs24 \
+
+\f1\fs29\fsmilli14667 # Difficulty Target: Medium
+\f3\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\
+win=mirror 1\
+win=firebolt 6\
+win=mining \
+\
+lose=moves 15\
+\
+# ----- Star/Points Targets ----------------\
+\
+star=15000\
+star=100000\
+star=200000\
+\
+# ----- Gameboard Items --------------------\
+\
+new=rbgyv\
+\
+color.r=Red\
+color.b=Blue\
+color.g=Green\
+color.y=Yellow\
+color.v=Violet\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 color.w=White
+\f0\fs24 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 weights=20 20 20 20 20\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
+color.s=Blocker|blocker|true
+\f3\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+# ----- The Gameboard ----------------------\
+\
+row=RRRRRRRR\
+row=RRRRRRRR\
+row=RRRRRRRR\
+row=RRRRRRRR\
+row=RRRRRRRR\
+row=RRRRRRRR\
+row=RRRRRRRR\
+row=RRRRRRRR\
+row=RRR..RRR\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f5\b\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
+#Boost
+\f3\b0\fs24 \
+
+\f5\b\fs29\fsmilli14667 #Must for every level
+\f3\b0\fs24 \
+
+\f4\fs29\fsmilli14667 boost=.1...1..
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 boost=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 boost=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 boost=...1....
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 boost=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 boost=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 boost=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 boost=.......1
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 boost=........
+\f3\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f5\b\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
+#Mining
+\f3\b0\fs24 \
+
+\f5\b\fs29\fsmilli14667 #Number indicates the level and position of mining on the board
+\f3\b0\fs24 \
+
+\f4\fs29\fsmilli14667 mining=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining=..1111..
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining=.222222.
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining=333..333
+\f3\fs24 \
+\
+\
+
+\f4\fs29\fsmilli14667 mining_color=.........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining_color=.........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining_color=.........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining_color=.........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining_color=.........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining_color=.........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining_color=..6213..
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining_color=.123456.
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mining_color=153..246
+\f3\fs24 \
+\
+\
+\
+
+\f5\b\fs29\fsmilli14667 #FIREBOLT
+\f3\b0\fs24 \
+
+\f5\b\fs29\fsmilli14667 #The number represents hit levels
+\f3\b0\fs24 \
+
+\f5\b\fs29\fsmilli14667 #v,>,<,^ marks the direction of a firebolt
+\f3\b0\fs24 \
+
+\f4\fs29\fsmilli14667 firebolt=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 firebolt=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 firebolt=^^^..^^^
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 firebolt=222..222
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 firebolt=^^^..^^^
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 firebolt=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 firebolt=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 firebolt=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 firebolt=........
+\f3\fs24 \
+\
+
+\f4\fs29\fsmilli14667 \
+\
+
+\f5\b #Mirror
+\f3\b0\fs24 \
+
+\f4\fs29\fsmilli14667 mirror.1.coord=3,4 
+\f5\b ##position
+\f3\b0\fs24 \
+
+\f4\fs29\fsmilli14667 mirror.1.color=r			
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 mirror.1.count=6
+\f3\fs24 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\
+# ----- Collectable Items --------------------\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f5\b\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
+#Mining
+\f3\b0\fs24 \
+
+\f4\fs29\fsmilli14667 target.mining.className=mineReward
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 target.mining.sprite=MiningHud
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 target.mining.type=flyto
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 target.mining.flyToUI=CollectorMaster3
+\f3\fs24 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f6\b\fs29\fsmilli14667 \cf0 # ----- Spell Rules ----------------------
+\f3\b0\fs24 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f5\b\fs29\fsmilli14667 \cf0 #Colovaria Spell
+\f3\b0\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.enabled=true
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.numTargets=15
+\f3\fs24 \
+\
+
+\f5\b\fs29\fsmilli14667 #Colovaria inkpots placement on board
+\f3\b0\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkPots=1......2
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkPots=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkPots=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkPots=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkPots=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkPots=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkPots=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkPots=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkPots=........
+\f3\fs24 \
+\
+
+\f5\b\fs29\fsmilli14667 #Color of pieces that inkpots release after casting a spell
+\f3\b0\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkColor=r......y
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkColor=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkColor=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkColor=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkColor=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkColor=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkColor=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkColor=........
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellColovaria.inkColor=........
+\f3\fs24 \
+\
+\
+\
+
+\f5\b\fs29\fsmilli14667 #Refill Spell
+\f3\b0\fs24 \
+
+\f4\fs29\fsmilli14667 SpellRefillingCharm.enabled=true
+\f3\fs24 \
+
+\f4\fs29\fsmilli14667 SpellRefillingCharm.addMoves=5
+\f3\fs24 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+# ----- Special Rules ----------------------\
+\
+rack_intro=type 2 duration 0.3 delay 0.01\
+rack_outro=type 2 duration 0.3 delay 0.01\
+\
+bg_color=255 255 255 255\
+bg_style=alt17\
+\
+music=\
+musicIsSequential=\
+music_delay=\
+\
+square_match=true\
+two_by_two_splitter=true\
+\
+bonus=6 deleter\
+bonus=11 deleter\
+bonus=15 deleter\
+bonus=19 deleter\
+\
+# ----- Power Ups --------------------------\
+\
+preLevelPowerup=powerup_one_splitter\
+preLevelPowerup=powerup_1bubble\
+preLevelPowerup=powerup_1seeker\
+\
+inLevelPowerup=powerup_shovel\
+inLevelPowerup=powerup_basket\
+inLevelPowerup=powerup_rowclear\
+inLevelPowerup=powerup_columnclear\
+\
+# ----- Secondary Cascade Commands ---------\
+\
+explosiveness=4\
+\
+cpu_assistance=off}
