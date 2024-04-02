@@ -1,0 +1,140 @@
+# ----- Level mp_7405 ------------------------
+# Designer: Yumna Shahid
+# Properties: Grim, Spread and Lantern
+# Difficulty Target: Hard
+
+
+win=grim 1
+win=spread 
+win=Collect 
+
+lose=moves 22
+
+# ----- Star/Points Targets ----------------
+
+star=15000
+star=100000
+star=200000
+
+# ----- Gameboard Items --------------------
+
+new=rbgyv
+
+color.r=Red
+color.b=Blue
+color.g=Green
+color.y=Yellow
+color.v=Violet
+
+weights=20 20 20 20 20
+
+color.s=Blocker|blocker|true
+
+
+# ----- The Gameboard ----------------------
+
+row=.RRRRRR.
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=.RRRRRR.
+
+#Boost
+#Must for every level
+boost=.1...1..
+boost=........
+boost=........
+boost=...1....
+boost=........
+boost=........
+boost=.1......
+boost=.......1
+boost=........
+
+
+
+#Lanterns:
+blockers=.2....2.
+blockers=2......2
+blockers=..1111..
+blockers=..1..1..
+blockers=..1..1..
+blockers=..1111..
+blockers=2......2
+blockers=.2....2.
+
+#The Grim
+grim.1.level=6
+
+grim.1.path=........
+grim.1.path=........
+grim.1.path=........
+grim.1.path=.<<xx...
+grim.1.path=.<<xx...
+grim.1.path=........
+grim.1.path=........
+grim.1.path=........
+
+#Spread
+spread=.111111.
+spread=........
+spread=........
+spread=........
+spread=........
+spread=........
+spread=........
+spread=.111111.
+
+
+# ----- Collectable Items --------------------
+
+#Lanterns Target
+target.blockers.className=blocker
+target.blockers.color=s
+target.blockers.goal=20
+target.blockers.sprite=Blocker
+target.blockers.type=flyto
+target.blockers.rotateOnFlyTo=false
+target.blockers.flyToUI=CollectorMaster2
+
+
+
+# ----- Special Rules ----------------------
+
+rack_intro=type 2 duration 0.3 delay 0.01
+rack_outro=type 2 duration 0.3 delay 0.01
+
+bg_color=255 255 255 255
+bg_style=alt17
+
+music=
+musicIsSequential=
+music_delay=
+
+square_match=true
+two_by_two_splitter=true
+
+bonus=6 deleter
+bonus=11 deleter
+bonus=15 deleter
+bonus=19 deleter
+
+# ----- Power Ups --------------------------
+
+preLevelPowerup=powerup_one_splitter
+preLevelPowerup=powerup_1bubble
+preLevelPowerup=powerup_1seeker
+
+inLevelPowerup=powerup_shovel
+inLevelPowerup=powerup_basket
+inLevelPowerup=powerup_rowclear
+inLevelPowerup=powerup_columnclear
+
+# ----- Secondary Cascade Commands ---------
+
+explosiveness=4
+
+cpu_assistance=off

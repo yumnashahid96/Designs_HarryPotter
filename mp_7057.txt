@@ -1,0 +1,207 @@
+# ----- Level mp_7057------------------------
+# Designer: Yumna Shahid
+# Properties: Mail, Ticket and newspaper - Additional functionalities System Aperio and Lumos Spells
+# Difficulty Target: Medium
+
+win=collect
+win=mail 17
+win=ticket 4
+win=newspaper 4
+
+lose=moves 12
+
+# ----- Star/Points Targets ----------------
+
+star=15000
+star=100000
+star=200000
+
+# ----- Gameboard Items --------------------
+
+new=rbgyv
+
+color.r=Red
+color.b=Blue
+color.g=Green
+color.y=Yellow
+color.v=Violet
+color.w=White
+color.m=Mail|mail|true
+color.t=Ticket|ticket|true
+color.s=Blocker|blocker|true  
+
+weights=20 20 20 20 20
+
+
+# ----- The Gameboard ----------------------
+
+row=.RRR.RRR.
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=.RRRRRRR.
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=.RRRRRRR.
+
+#Boost
+#Must for every level
+boost=.....1...
+boost=.........
+boost=.........
+boost=..1......
+boost=.........
+boost=.........
+boost=.........
+boost=.......1.
+boost=.........
+
+
+#Mails
+#Number indicates the position and layer of mails
+mail=.........
+mail=.........
+mail=.........
+mail=..11111..
+mail=.2222222.
+mail=..11111..
+mail=.........
+mail=.........
+mail=.........
+
+
+#Tickets
+#Indicates the position of the ticket. Each ticket is of size 1x2.
+tickets=.........
+tickets=.........
+tickets=.........
+tickets=.........
+tickets=.........
+tickets=.........
+tickets=.........
+tickets=Tt.....Tt
+tickets=.Tt...Tt.
+
+#Newspaper
+#each number is the ID of that stack, each stack is of size 2x2.
+
+newspaper.row=.........
+newspaper.row=.........
+newspaper.row=11.....22
+newspaper.row=11.....22
+newspaper.row=.........
+newspaper.row=33.....44
+newspaper.row=33.....44
+newspaper.row=.........
+newspaper.row=.........
+
+#indicates how many newspapers are in each stack.
+newspaper.height1=1
+newspaper.height2=1
+newspaper.height3=1
+newspaper.height4=1
+
+
+# ----- Collectable Items --------------------
+
+#Mails Target
+target.mail.className=mail
+target.mail.color=m
+target.mail.goal=17
+target.mail.sprite=Mail
+target.mail.type=flyto
+target.mail.rotateOnFlyTo=false
+target.mail.flyToUI=CollectorMaster2
+
+#Tickets Target
+target.ticket.className=ticket
+target.ticket.color=t
+target.ticket.goal=4
+target.ticket.type=flyto
+target.ticket.rotateOnFlyTo=false
+target.ticket.flyToUI=CollectorMaster1
+
+
+
+
+# ----- Spell Rules ----------------------
+
+
+#CistemAperioSpell
+SpellCistemAperio.enabled=true
+SpellCistemAperio.benefit_supers=Vsplitter,2
+SpellCistemAperio.benefit_supers=Hsplitter,2
+#super options (seeker,Hsplitter,Prizedfruit)
+SpellCistemAperio.benefit_moves=2
+
+#Chest placement on board
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=...111...
+SpellCistemAperio.chest=...111...
+
+
+
+
+
+#Spell Lumos
+SpellLumos.enabled=true
+
+LUMOS SMOKE placement:
+dark=.........
+dark=.........
+dark=.........
+dark=.........
+dark=.1111111.
+dark=.........
+dark=.........
+dark=.........
+dark=.........
+
+
+
+
+
+
+# ----- Special Rules ----------------------
+
+rack_intro=type 2 duration 0.3 delay 0.01
+rack_outro=type 2 duration 0.3 delay 0.01
+
+bg_color=255 255 255 255
+bg_style=alt17
+
+music=
+musicIsSequential=
+music_delay=
+
+square_match=true
+two_by_two_splitter=true
+
+bonus=6 deleter
+bonus=11 deleter
+bonus=15 deleter
+bonus=19 deleter
+
+# ----- Power Ups --------------------------
+
+preLevelPowerup=powerup_one_splitter
+preLevelPowerup=powerup_1bubble
+preLevelPowerup=powerup_1seeker
+
+inLevelPowerup=powerup_shovel
+inLevelPowerup=powerup_basket
+inLevelPowerup=powerup_rowclear
+inLevelPowerup=powerup_columnclear
+
+# ----- Secondary Cascade Commands ---------
+
+explosiveness=4
+
+cpu_assistance=off

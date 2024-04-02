@@ -1,0 +1,190 @@
+# ----- Level mp_7367 ------------------------
+# Designer: Yumna Shahid
+# Properties: Mirrors, Firebolts and Mining - Additional functionalities Colovaria and refill Spells
+# Difficulty Target: Medium
+
+
+win=mirror 1
+win=firebolt 6
+win=mining 
+
+lose=moves 15
+
+# ----- Star/Points Targets ----------------
+
+star=15000
+star=100000
+star=200000
+
+# ----- Gameboard Items --------------------
+
+new=rbgyv
+
+color.r=Red
+color.b=Blue
+color.g=Green
+color.y=Yellow
+color.v=Violet
+color.w=White
+weights=20 20 20 20 20
+
+color.s=Blocker|blocker|true
+
+
+# ----- The Gameboard ----------------------
+
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRR..RRR
+
+#Boost
+#Must for every level
+boost=.1...1..
+boost=........
+boost=........
+boost=...1....
+boost=........
+boost=........
+boost=........
+boost=.......1
+boost=........
+
+
+
+#Mining
+#Number indicates the level and position of mining on the board
+mining=........
+mining=........
+mining=........
+mining=........
+mining=........
+mining=........
+mining=..1111..
+mining=.222222.
+mining=333..333
+
+
+mining_color=.........
+mining_color=.........
+mining_color=.........
+mining_color=.........
+mining_color=.........
+mining_color=.........
+mining_color=..6213..
+mining_color=.123456.
+mining_color=153..246
+
+
+
+#FIREBOLT
+#The number represents hit levels
+#v,>,<,^ marks the direction of a firebolt
+firebolt=........
+firebolt=........
+firebolt=^^^..^^^
+firebolt=222..222
+firebolt=^^^..^^^
+firebolt=........
+firebolt=........
+firebolt=........
+firebolt=........
+
+
+
+#Mirror
+mirror.1.coord=3,4 ##position
+mirror.1.color=r			
+mirror.1.count=6
+
+
+
+# ----- Collectable Items --------------------
+
+#Mining
+target.mining.className=mineReward
+target.mining.sprite=MiningHud
+target.mining.type=flyto
+target.mining.flyToUI=CollectorMaster3
+
+
+# ----- Spell Rules ----------------------
+
+
+#Colovaria Spell
+SpellColovaria.enabled=true
+SpellColovaria.numTargets=15
+
+#Colovaria inkpots placement on board
+SpellColovaria.inkPots=1......2
+SpellColovaria.inkPots=........
+SpellColovaria.inkPots=........
+SpellColovaria.inkPots=........
+SpellColovaria.inkPots=........
+SpellColovaria.inkPots=........
+SpellColovaria.inkPots=........
+SpellColovaria.inkPots=........
+SpellColovaria.inkPots=........
+
+#Color of pieces that inkpots release after casting a spell
+SpellColovaria.inkColor=r......y
+SpellColovaria.inkColor=........
+SpellColovaria.inkColor=........
+SpellColovaria.inkColor=........
+SpellColovaria.inkColor=........
+SpellColovaria.inkColor=........
+SpellColovaria.inkColor=........
+SpellColovaria.inkColor=........
+SpellColovaria.inkColor=........
+
+
+
+#Refill Spell
+SpellRefillingCharm.enabled=true
+SpellRefillingCharm.addMoves=5
+
+
+
+
+
+# ----- Special Rules ----------------------
+
+rack_intro=type 2 duration 0.3 delay 0.01
+rack_outro=type 2 duration 0.3 delay 0.01
+
+bg_color=255 255 255 255
+bg_style=alt17
+
+music=
+musicIsSequential=
+music_delay=
+
+square_match=true
+two_by_two_splitter=true
+
+bonus=6 deleter
+bonus=11 deleter
+bonus=15 deleter
+bonus=19 deleter
+
+# ----- Power Ups --------------------------
+
+preLevelPowerup=powerup_one_splitter
+preLevelPowerup=powerup_1bubble
+preLevelPowerup=powerup_1seeker
+
+inLevelPowerup=powerup_shovel
+inLevelPowerup=powerup_basket
+inLevelPowerup=powerup_rowclear
+inLevelPowerup=powerup_columnclear
+
+# ----- Secondary Cascade Commands ---------
+
+explosiveness=4
+
+cpu_assistance=off

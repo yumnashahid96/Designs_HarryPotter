@@ -1,0 +1,149 @@
+# ----- Level mp_6995 ------------------------
+# Designer: Yumna Shahid
+# Properties: Locks, Spread and Gramophone
+# Difficulty Target: Medium
+
+
+win=locks
+win=spread 
+win=collect 
+
+lose=moves 22
+
+# ----- Star/Points Targets ----------------
+
+star=15000
+star=100000
+star=200000
+
+# ----- Gameboard Items --------------------
+
+new=rbgyv
+
+color.r=Red
+color.b=Blue
+color.g=Green
+color.y=Yellow
+color.v=Violet
+
+weights=20 20 20 20 20
+
+color.s=Blocker|blocker|true
+
+
+# ----- The Gameboard ----------------------
+
+row=.RRR.RRR.
+row=RRRRRRRRR
+row=.RRRRRRR.
+row=RRRRRRRRR
+row=.RRRRRRR.
+row=RRRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+
+#Boost
+#Must for every level
+boost=.1...1...
+boost=.......1.
+boost=.........
+boost=...1.1...
+boost=.........
+boost=.........
+boost=........
+boost=.......1
+boost=........
+
+
+
+#Locks
+#Number indicates the level and position of lock
+
+lock=.2.2.2.2.
+lock=1...2...1
+lock=.........
+lock=1...2...1
+lock=....2....
+lock=1...2...1
+lock=.1.....1.
+lock=.1.....1.
+lock=.1.....1.
+
+
+#Gramophone
+#Number indicates the position of gramophone
+gramophone.row=.........
+gramophone.row=.........
+gramophone.row=.........
+gramophone.row=.........
+gramophone.row=.........
+gramophone.row=.........
+gramophone.row=.........
+gramophone.row=....1....
+gramophone.row=.........
+
+gramophone.endingFanfare=waltz
+#valid fanfares to select from: orch, ragtime, and waltz
+
+
+#Spread
+spread=.111.111.
+spread=1.......1
+spread=.........
+spread=1.......1
+spread=.........
+spread=1.......1
+spread=.......
+spread=.......
+spread=1111111
+
+
+# ----- Collectable Items --------------------
+
+#Gramophone Target
+target.gramophone.className=gramophone
+target.gramophone.sprite=GramophoneHud
+target.gramophone.type=flyto
+target.gramophone.goal=10
+target.gramophone.flyToUI=CollectorMaster1
+
+
+
+
+# ----- Special Rules ----------------------
+
+rack_intro=type 2 duration 0.3 delay 0.01
+rack_outro=type 2 duration 0.3 delay 0.01
+
+bg_color=255 255 255 255
+bg_style=alt17
+
+music=
+musicIsSequential=
+music_delay=
+
+square_match=true
+two_by_two_splitter=true
+
+bonus=6 deleter
+bonus=11 deleter
+bonus=15 deleter
+bonus=19 deleter
+
+# ----- Power Ups --------------------------
+
+preLevelPowerup=powerup_one_splitter
+preLevelPowerup=powerup_1bubble
+preLevelPowerup=powerup_1seeker
+
+inLevelPowerup=powerup_shovel
+inLevelPowerup=powerup_basket
+inLevelPowerup=powerup_rowclear
+inLevelPowerup=powerup_columnclear
+
+# ----- Secondary Cascade Commands ---------
+
+explosiveness=4
+
+cpu_assistance=off

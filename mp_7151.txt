@@ -1,0 +1,134 @@
+# ----- Level mp_7151 ------------------------
+# Designer: Yumna Shahid
+# Properties: Jelly Slugs, Dragon Eggs and Flags
+# Difficulty Target: Easy
+
+
+win=BigEgg 1
+win=jellyslugs 4
+win=Collect 
+
+lose=moves 25
+
+# ----- Star/Points Targets ----------------
+
+star=15000
+star=100000
+star=200000
+
+# ----- Gameboard Items --------------------
+
+new=rbgyv
+
+color.r=Red
+color.b=Blue
+color.g=Green
+color.y=Yellow
+color.v=Violet
+
+weights=20 20 20 20 20
+
+color.f=Flag|flag|true
+
+flag_rules=100,2,1,4
+target.flag.colors=rbyg
+target.flag.colorWeights=25 25 25 25
+
+
+# ----- The Gameboard ----------------------
+
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+row=.RRRRRR.
+row=RRRRRRRR
+row=.RRRRRR.
+row=RRRRRRRR
+row=RRRRRRRR
+row=RRRRRRRR
+
+#Boost
+#Must for every level
+boost=.1......
+boost=......1.
+boost=........
+boost=....1...
+boost=........
+boost=........
+boost=........
+boost=.......1
+boost=........
+
+jellySlugs=..……
+jellySlugs=……..
+jellySlugs=..……
+jellySlugs=..……
+jellySlugs=..vvvv..
+jellySlugs=..……
+jellySlugs=.1….1.
+jellySlugs=.1….1.
+jellySlugs=..……
+
+flags=……..
+flags=..1..2..
+flags=..1..2..
+flags=……..
+flags=……..
+flags=……..
+flags=……..
+flags=..……
+flags=..……
+
+#Dragon_egg
+bigEgg.1.pos=3,1
+bigEgg.1.level=3
+
+
+# ----- Collectable Items --------------------
+
+target.flag.className=flag
+target.flag.sprite=Flag_HUD
+target.flag.color=f
+target.flag.goal=4
+target.flag.type=flyto
+target.flag.rotateOnFlyTo=false
+target.flag.flyToUI=CollectorMaster4
+target.flag.dropColumnFilter=111111111
+
+
+# ----- Special Rules ----------------------
+
+rack_intro=type 2 duration 0.3 delay 0.01
+rack_outro=type 2 duration 0.3 delay 0.01
+
+bg_color=255 255 255 255
+bg_style=alt17
+
+music=
+musicIsSequential=
+music_delay=
+
+square_match=true
+two_by_two_splitter=true
+
+bonus=6 deleter
+bonus=11 deleter
+bonus=15 deleter
+bonus=19 deleter
+
+# ----- Power Ups --------------------------
+
+preLevelPowerup=powerup_one_splitter
+preLevelPowerup=powerup_1bubble
+preLevelPowerup=powerup_1seeker
+
+inLevelPowerup=powerup_shovel
+inLevelPowerup=powerup_basket
+inLevelPowerup=powerup_rowclear
+inLevelPowerup=powerup_columnclear
+
+# ----- Secondary Cascade Commands ---------
+
+explosiveness=4
+
+cpu_assistance=off
